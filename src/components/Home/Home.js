@@ -12,7 +12,7 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <h1 style={{ paddingBottom: 5 }} className="heading">
                 Hey!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
@@ -24,7 +24,7 @@ function Home() {
                 <strong className="main-name"> Vicky</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ padding: 40, textAlign: "left" }}>
                 <Type />
               </div>
               <button class="button" href={Resume}>

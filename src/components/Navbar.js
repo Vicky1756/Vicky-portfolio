@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import Resume from "../Assets/resume.pdf";
 import { Link } from "react-router-dom";
 import {
   AiOutlineHome,
@@ -72,16 +71,9 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
-            <a
-              rel="noreferrer"
-              target="_blank"
-              className="cta-btn cta-btn--resume"
-              href={Resume}
-            >
-              View Resume
-            </a>
           </Nav>
         </Navbar.Collapse>
+        
       </Container>
     </Navbar>
   );

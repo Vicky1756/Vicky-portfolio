@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/bui.svg";
-import Particle from "../Particle";
 import Home2 from "./Home2";
 import Resume from "../../Assets/resume.pdf";
 import Type from "./Type";
@@ -10,8 +9,6 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        
-        <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
@@ -30,6 +27,9 @@ function Home() {
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
+              <button class="button" href={Resume}>
+                View Resume
+              </button>
             </Col>
 
             <Col md={5}>

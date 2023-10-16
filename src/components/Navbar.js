@@ -72,16 +72,14 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
-            <span className="d-flex mt-3">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  className="cta-btn cta-btn--resume"
-                  href={Resume}
-                >
-                  View Resume
-                </a>
-              </span>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              className="cta-btn cta-btn--resume"
+              href={Resume}
+            >
+              View Resume
+            </a>
           </Nav>
         </Navbar.Collapse>
       </Container>

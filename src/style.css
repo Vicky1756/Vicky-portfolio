@@ -254,6 +254,7 @@ footer {
   border-radius: 4px;
   padding: 0.8em 2em;
   margin-left: 40px !important;
+  margin-top: 40px !important;
   background: var(--bg);
   transition: 0.2s;
 }

@@ -47,7 +47,7 @@ function Home() {
         </Container>
       </Container>
       <About />
-      <Projects />
+      <Projects id="projects"/>
       <Wave
         id="wave"
         fill="#e29706"

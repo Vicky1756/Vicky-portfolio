@@ -41,8 +41,8 @@ button:focus {
 /*Scrollbar   */
 /* --------- */
 
-::-webkit-scrollbar {
-  display: none;
+:-webkit-scrollbar {
+  width: 7px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -66,19 +66,26 @@ button:focus {
 /* --------- */
 .sticky {
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
-  backdrop-filter: blur(15px) !important;
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translateY(0); 
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
+  position: absolute !important;
 }
 
 .navbar-hidden {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-100%);
+}
+.nav-link {
+  padding: 1rem 2rem !important;
+  color: #1f2028 !important;
+  font-weight: 1000;
+}
+.nav-link:hover {
+  color:  #407bff !important;
 }
 /* --------- */
 /* Home section */
@@ -377,34 +384,4 @@ footer {
   .about-img {
     padding-top: 0 !important;
   }
-}
-/* --------- */
-/* Top Button */
-/* --------- */
-
-:root {
-  --buttonColor: #407bff;
-  --buttonHover: #0320fa;
-  --topButtonHover: #000;
-}
-
-#topButton {
-  visibility: hidden;
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: var(--buttonColor); /* corrected variable name */
-  color: #fff;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 15px;
-  font-size: 14px;
-}
-
-#topButton:hover {
-  background-color: var(--topButtonHover); /* corrected variable name */
-  transition: all ease-in-out 0.2s;
 }

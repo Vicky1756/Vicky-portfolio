@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import {
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
 
 function NavBar() {
   const [navColour, updateNavbar] = useState(false);
@@ -15,10 +10,10 @@ function NavBar() {
     function scrollHandler() {
       const currentScrollPos = window.pageYOffset;
 
-      if (currentScrollPos > prevScrollPos) {
+      if (currentScrollPos > prevScrollPos && currentScrollPos > 100) {
         updateNavbar(false); // Scrolling down
       } else {
-        updateNavbar(true); // Scrolling up
+        updateNavbar(true); // Scrolling up or at the top
       }
       setPrevScrollPos(currentScrollPos);
     }
@@ -39,16 +34,14 @@ function NavBar() {
     >
       <Nav className="ms-auto" defaultActiveKey="#home">
         <Nav.Item>
-          <Nav.Link href="#home">
-            <AiOutlineHome style={{ marginBottom: "2px" }} />
+          <Nav.Link href="#home" >
             Home
           </Nav.Link>
         </Nav.Item>
 
         <Nav.Item>
-          <Nav.Link href="#about">
+          <Nav.Link href="#about" >
             <span style={{ display: 'flex', alignItems: 'center' }}>
-              <AiOutlineUser style={{ marginBottom: "2px" }} />
               About
             </span>
           </Nav.Link>
@@ -56,7 +49,6 @@ function NavBar() {
 
         <Nav.Item>
           <Nav.Link href="#projects">
-            <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />
             Projects
           </Nav.Link>
         </Nav.Item>

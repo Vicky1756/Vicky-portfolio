@@ -14,7 +14,6 @@ function About() {
             md={7}
             style={{
               justifyContent: "center",
-              paddingTop: "30px",
               paddingBottom: "50px",
             }}
           >

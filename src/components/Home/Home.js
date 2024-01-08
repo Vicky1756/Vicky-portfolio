@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/bui.svg";
 import Resume from "../../Assets/resume.pdf";
 import About from "../About/About";
-import ScrollToTopButton from "../Top";
 import Projects from "../Projects/Projects";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -95,7 +94,6 @@ function Home() {
         </ul>
         <p3 class="made-by">Made with ❤️ by Vicky</p3>
       </footer>
-      <ScrollToTopButton />
     </section>
   );
 }

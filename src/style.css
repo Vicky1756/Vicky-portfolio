@@ -1,3 +1,4 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
 html {
   --section-background-color: #F1A00B !important;
   --imp-text-color: #407bff;;
@@ -41,9 +42,8 @@ button:focus {
 /* --------- */
 
 ::-webkit-scrollbar {
-  width: 7px;
+  display: none;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   background:white;
@@ -377,4 +377,34 @@ footer {
   .about-img {
     padding-top: 0 !important;
   }
+}
+/* --------- */
+/* Top Button */
+/* --------- */
+
+:root {
+  --buttonColor: #407bff;
+  --buttonHover: #0320fa;
+  --topButtonHover: #000;
+}
+
+#topButton {
+  visibility: hidden;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--buttonColor); /* corrected variable name */
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+#topButton:hover {
+  background-color: var(--topButtonHover); /* corrected variable name */
+  transition: all ease-in-out 0.2s;
 }

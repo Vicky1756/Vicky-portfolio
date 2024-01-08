@@ -8,31 +8,32 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-          Hello there!, I'm  <span className="purple">Vicky Choosakul </span> 
-          A <span className="purple"> Canberra-based </span> Software Developer.
-            <br /> specialised in back-end development using Python and Golang. 
-            <br />
-            Extremely motivated to constantly develop my skills and grow professionally. 
-            A good observer and pays attention to detail. Loves to experiment around in order 
-            to find improved as well as explore new prospects. A team player and a good leader.
+            Hi there! I'm <span className="purple">Vicky</span>, a passionate
+            Software Developer based in Canberra. My focus lies in back-end
+            development, specializing in Python and Golang.
             <br />
             <br />
-            🌐 Beyond my professional roles, I'm passionate about...
+            Continual growth and skill development drive my professional
+            journey. I'm detail-oriented, love experimenting to innovate, and
+            thrive both as a team player and a leader.
+            <br />
+            <br />
+            🌐 Beyond my professional roles, I'm also passionate about...
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> brewing coffee
+              <ImPointRight /> Crafting the perfect cup of coffee
             </li>
             <li className="about-activity">
-              <ImPointRight /> Wine tasting
+              <ImPointRight /> Exploring diverse wines
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Traveling and discovering new cultures
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "There's a Riesling for everything!"{" "}
+            "There's always a perfect wine for every moment!"
           </p>
         </blockquote>
       </Card.Body>
